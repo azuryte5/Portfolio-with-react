@@ -11,25 +11,22 @@
 1. [Credits](#credits)
 
 ## Links
-The URL of the GitHub repository: 
+The URL of the GitHub repository: https://github.com/azuryte5/Portfolio-with-react
 
-The link to the heroku: 
+The link to the heroku: https://azuryte5.github.io/Portfolio-with-react/
 
 -----
 ## Usage
-The user will be able to add expenses and deposits to their budget with or without a connection. If the user enters transactions offline, the total should be updated when they're brought back online
+Being a web developer means being part of a community. You’ll need a place to share your projects not only if you're applying for jobs or working as a freelancer but also so that you can share your work with fellow developers and collaborate on future projects.
 
 
 Image shows example of transaction working away from network.
-![Image of app](https://user-images.githubusercontent.com/85147307/148717895-9821d777-36ef-4d69-8fb1-c1175c52a608.png)
+<!-- ![Image of app](https://user-images.githubusercontent.com/85147307/148717895-9821d777-36ef-4d69-8fb1-c1175c52a608.png) -->
 
 -----
 ## Tech Used 
 - Node js
-- Mongo
-- Heroku
-- Express js
-- PWA
+- React
 
 
 ## User Story
@@ -71,6 +68,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ----
 ## Credits
-Made by Andrew Lefebvre 💰
+Made by Andrew Lefebvre 
 
 -----
