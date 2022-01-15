@@ -1,24 +1,26 @@
-import react from "react";
+import React from 'react'
 
-function Nav() {
+function Nav(props) {
 
-    const categories = [
-                  { name: 'About Me', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-                  { name: 'Portfolio', description: 'Portraits of people in my life' },
-                  { name: 'Contact Me', description: 'Delicious delicacies' },
-                  { name: 'Resume', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
-    ]
+const {currentSection, handleSectionChange, sections} = props
+const tabs = ['About', 'Portfolio', 'Contact Me', 'Resume'];
+
 
 return (
 <nav>
-    <ul className="flex-row">
-    {categories.map((category) => (
-        <li>{category.name}</li>
-    ))}
+<ul className="flex-row">
+  {tabs.map(tab => (
+      <li className={`nav-item`}
+      key={tab}
+      onClick={() => handleSectionChange(tab)}
+      className={
+        currentSection === tab ? 'nav-link active' : 'nav-link'
+      }
+      > {tab}
+    </li>
+  ))}
 </ul>
 </nav>
-
-
 )
 }
 

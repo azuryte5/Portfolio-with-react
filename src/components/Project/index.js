@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 const Project = () => {
     
@@ -28,7 +28,7 @@ const Project = () => {
     return (
         <ul className="flex-row">
         {projectlist.map((project) => (
-            <li>{project.name}</li>
+            <li key={project.name}>{project.name}</li>
         ))}
     </ul>
 
