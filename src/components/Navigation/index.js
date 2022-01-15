@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav(props) {
 
-const {currentSection, handleSectionChange, sections} = props
+const {currentSection, handleSectionChange} = props
 const tabs = ['About', 'Portfolio', 'Contact Me', 'Resume'];
 
 

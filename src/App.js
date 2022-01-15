@@ -5,19 +5,29 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
 // import {Jumbotron} from 'react-bootstrap';
+import Resume from './pages/Resume';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 function App() {
-  const sections = [
-    { name: "About", content: "This is About Me" },
-    { name: "Portfolio", content: "This is my portfolio" },
-    { name: "Contact Me", content: "This is my Contact" },
-    { name: "Resume", content: "This is my Resume" },{}
-  ];
-  const [currentSection, handleSectionChange] = useState(sections[0]);
+  const [currentSection, handleSectionChange] = useState();
+
+  const renderPage = () => {
+    switch (currentSection) {
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact':
+        return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
   return (
     <div className="App">
       <Header
-        sections={sections}
         currentSection={currentSection}
         handleSectionChange={handleSectionChange}
       />
@@ -26,8 +36,7 @@ function App() {
           <h2>Looking for a job</h2>
         </div>
       </section>
-      <article>{currentSection.content}</article>
-      <Project />
+      <div>{renderPage(currentSection)}</div>
       <Footer />
     </div>
   );
