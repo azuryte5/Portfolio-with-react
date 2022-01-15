@@ -1,19 +1,30 @@
 import React from "react";
-
+import { Form, Button } from "react-bootstrap";
 const Contact = () => (
   <div>
-    <h1>Contact Page</h1>
-    <p>
-      Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-      Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-      pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-      tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-      posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec metus
-      vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula. Nam
-      tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-      conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus. Etiam vel
-      condimentum magna, quis tempor nulla.
-    </p>
+    <div>
+      <h2>Feel free to reach out to me!</h2>
+    </div>
+    <Form>
+      <Form.Group>
+        <Form.Label>Enter your full name:</Form.Label>
+        <Form.Control type="text" placeholder="Enter your full name" />
+      </Form.Group>
+      <Form.Group>
+        <Form.Label>Enter your email address:</Form.Label>
+        <Form.Control
+          type="email"
+          placeholder="Enter your your email address"
+        />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Message</Form.Label>
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Click here to submit request
+      </Button>
+    </Form>
   </div>
 );
 
