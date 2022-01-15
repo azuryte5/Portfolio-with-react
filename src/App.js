@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
-// import {Jumbotron} from 'react-bootstrap';
+
 import Resume from './pages/Resume';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';

@@ -2,13 +2,18 @@ import React from "react";
 
 const About = () => (
   <div>
-    <h1>About Page</h1>
+    <h2>About Page</h2>
     <p>
-      Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
-      ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus porta. Nam
-      quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-      imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-      diam, sit amet facilisis lectus blandit at.
+      I'm Andrew Lefebvre. I'm re-tailoring my work experience to adjust to a
+      web environment. For the last ten years I've been working with adults and
+      children with special needs and developmental disabilities. During this
+      time, I've developed and created visual aides and virtual tools to assist
+      learning and skill acquisition. I've had to continually adapt my skills
+      and communication style to interact with people with many different
+      medical and developmental needs. Now, I’m interested in web development
+      and have been steadily increasing my skills to build web content. I hope
+      to apply my accommodation and problem solving skills from a physical
+      environment to a virtual one.
     </p>
   </div>
 );
