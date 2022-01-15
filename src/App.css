@@ -62,7 +62,7 @@ header li {
   padding-right: 10px;
 }
 
-header nav ul li a:hover {
+.nav-link a:hover {
   font-weight: bold;
   background-color: var(--primary-color);
   border-radius: 10px 10px;
