@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import Nav from "../Navigation"
 
 function Header(props){
 
 const {currentSection, handleSectionChange, } = props
     return (
-<header>
+<header className="top">
     <h1>
     Andrew Lefebvre
     </h1>

@@ -1,7 +1,8 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container, Row } from "react-bootstrap";
 const Contact = () => (
-  <div>
+  <Container>
+    <Row className="justify-content-md-center">
     <div>
       <h2>Feel free to reach out to me!</h2>
     </div>
@@ -25,7 +26,8 @@ const Contact = () => (
         Click here to submit request
       </Button>
     </Form>
-  </div>
+    </Row>
+  </Container>
 );
 
 export default Contact;

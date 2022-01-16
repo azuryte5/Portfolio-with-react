@@ -1,44 +1,41 @@
 import React from "react";
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 const Project = () => {
     
     const projectList = [
-        { name: 'Sputtle Music App', link: 'https://github.com/azuryte5/music-battle-spotify'},
-        { name: 'Nutrivalue', link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value'},
-        { name: 'Mern Thoughts Blog', link: 'https://github.com/azuryte5/MERN-deep-thoughts'},
-        { name: 'Tech it Ralph', link: 'https://github.com/azuryte5/Tech-It-Ralph'},
-        { name: 'Book Search Engine', link: 'https://github.com/azuryte5/MERN-deep-thoughts'},
-        { name: 'Photo-Snap gallery', link: 'https://github.com/azuryte5/photo-port-snap'},
-        { name: 'Pizza Builder', link: 'https://github.com/azuryte5/nosql-pizza-hunt'},
-        { name: 'Vault-tec PWA', link: 'https://github.com/azuryte5/vault-tec-PWA'},
-        { name: 'The Gathering ORM', link: 'https://github.com/azuryte5/the-gathering-ORM'},
-        { name: 'Note Taker Achievement-get', link: 'https://github.com/azuryte5/note-taker-achievement-GET'},
-        { name: 'Art of Recruiter Programming', link: 'https://github.com/azuryte5/art-of-recruiter-programming'},
-        { name: 'Forecast Brought to you', link: 'https://github.com/azuryte5/forecast-brought-to-you-6'},
-        { name: 'Deep Space Manager', link: 'https://github.com/azuryte5/deep-space-manager'},
-        { name: 'Coding Quiz', link: 'https://github.com/azuryte5/Coding-Quiz-IV'},
-        { name: 'Password Generator', link: 'https://github.com/azuryte5/Assignment3-password'}
+        { name: 'Sputtle Music App', link: 'https://github.com/azuryte5/music-battle-spotify', image:'https://user-images.githubusercontent.com/85147307/149671331-4c47a551-9024-4890-9f69-c198e5403845.png'},
+        { name: 'Nutrivalue', link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value', image:'https://user-images.githubusercontent.com/85147307/149609594-266b3b58-5ad4-443a-a6cb-0da8a3ced07e.png'},
+        { name: 'Tech it Ralph', link: 'https://github.com/azuryte5/Tech-It-Ralph', image:'https://user-images.githubusercontent.com/85147307/149609655-39cf6c72-7ecc-41f5-aa96-d8e4bec8cb99.png'},
+        { name: 'Vault-tec PWA', link: 'https://github.com/azuryte5/vault-tec-PWA', image:'https://user-images.githubusercontent.com/85147307/149609610-2029cbad-b38c-4d0e-bebd-77da3e83403d.png'},
+        { name: 'Art of Recruiter Programming', link: 'https://github.com/azuryte5/art-of-recruiter-programming', image:'https://user-images.githubusercontent.com/85147307/149671175-acf4f25d-5ada-4077-9744-4c518a4fe9fe.png'},
+        { name: 'Deep Space Manager', link: 'https://github.com/azuryte5/deep-space-manager', image:'https://user-images.githubusercontent.com/85147307/149609664-94b7ab92-7909-43f3-9f91-da445f24d2fd.png'},
+
 ]    
     return (
-    <div>
+    <Container className="justify-content-md-center fluid" >
+        <Row>
     {projectList.map(project => {
     return (
-    <Card className="bg-dark text-white" style={{ width: '18rem'}} border="success">
+    <Col>
+    <Card className="bg-dark text-white fluid" style={{ width: '20rem'}} border="success" key={project.name}>
         <Card.Body>
-        <Card.Img src="https://user-images.githubusercontent.com/85147307/149609304-ad5a3969-c1d8-4bee-b98d-145f69c66f71.jpg" alt="Card image" />
+        <Card.Img src={project.image} alt="Card image" height="100%" />
             <Card.ImgOverlay> 
-            <Card.Title key={project.name}>{project.name}</Card.Title>
+            <Card.Title >{project.name}</Card.Title>
             <Card.Subtitle>Subtitle</Card.Subtitle>
-            <Button variant="primary">Deployed App</Button>
-            <Button variant="primary">GitHub</Button>
-            <Card.Link href="#">Deployed App</Card.Link>
-            <Card.Link href="#">GitHub Repo</Card.Link>
+            <Button variant="warning">Deployed App</Button>
+            <Button variant="primary" href={project.link} target='_blank'>GitHub</Button>
+            <Card.Link>Deployed App</Card.Link>
+            <Card.Link href={project.link} target='_blank'>GitHub Repo</Card.Link>
             </Card.ImgOverlay>
         </Card.Body>
-    </Card>)})    
+    </Card>
+    </Col>
+    )})
     }
-    </div>
+    </Row>
+    </Container>
     )
 }
 

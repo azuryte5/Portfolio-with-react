@@ -7,10 +7,10 @@ const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
 
 
 return (
-<nav>
+<nav className='navbar'>
 <ul className="flex-row">
   {tabs.map(tab => (
-      <li className={`nav-item`}
+      <li className={`nav-item nav-link`}
       key={tab}
       onClick={() => handleSectionChange(tab)}
       className={
