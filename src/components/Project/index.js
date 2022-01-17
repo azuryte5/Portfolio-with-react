@@ -4,12 +4,12 @@ import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 const Project = () => {
     
     const projectList = [
-        { name: 'Sputtle Music App', link: 'https://github.com/azuryte5/music-battle-spotify', image:'https://user-images.githubusercontent.com/85147307/149671331-4c47a551-9024-4890-9f69-c198e5403845.png', subtitle:"Spotify API Music Battle MVC"},
-        { name: 'Nutrivalue', link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value', image:'https://user-images.githubusercontent.com/85147307/149609594-266b3b58-5ad4-443a-a6cb-0da8a3ced07e.png', subtitle:"Front End Recipe and Map API"},
-        { name: 'Tech it Ralph', link: 'https://github.com/azuryte5/Tech-It-Ralph', image:'https://user-images.githubusercontent.com/85147307/149609655-39cf6c72-7ecc-41f5-aa96-d8e4bec8cb99.png', subtitle:"MVC Tech Blog w auth"},
-        { name: 'Vault-tec PWA', link: 'https://github.com/azuryte5/vault-tec-PWA', image:'https://user-images.githubusercontent.com/85147307/149609610-2029cbad-b38c-4d0e-bebd-77da3e83403d.png', subtitle:"PWA"},
-        { name: 'Art of Recruiter Programming', link: 'https://github.com/azuryte5/art-of-recruiter-programming', image:'https://user-images.githubusercontent.com/85147307/149671175-acf4f25d-5ada-4077-9744-4c518a4fe9fe.png', subtitle:"OOP inquirer roster page generation"},
-        { name: 'Deep Space Manager', link: 'https://github.com/azuryte5/deep-space-manager', image:'https://user-images.githubusercontent.com/85147307/149609664-94b7ab92-7909-43f3-9f91-da445f24d2fd.png', subtitle:"Back End Sequelize"},
+        { name: 'Sputtle Music App', deploy:"https://music-battle-spotify.herokuapp.com/", link: 'https://github.com/azuryte5/music-battle-spotify', image:'https://user-images.githubusercontent.com/85147307/149671331-4c47a551-9024-4890-9f69-c198e5403845.png', subtitle:"Spotify API Music Battle MVC"},
+        { name: 'Nutrivalue', deploy:"https://azuryte5.github.io/Nutrition-Sustenance-Value/", link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value', image:'https://user-images.githubusercontent.com/85147307/149609594-266b3b58-5ad4-443a-a6cb-0da8a3ced07e.png', subtitle:"Front End Recipe and Map API"},
+        { name: 'Tech it Ralph', deploy:"https://polar-sierra-45467.herokuapp.com/", link: 'https://github.com/azuryte5/Tech-It-Ralph', image:'https://user-images.githubusercontent.com/85147307/149609655-39cf6c72-7ecc-41f5-aa96-d8e4bec8cb99.png', subtitle:"MVC Tech Blog w auth"},
+        { name: 'Vault-tec PWA', deploy:"https://vault-tec-pwa.herokuapp.com/", link: 'https://github.com/azuryte5/vault-tec-PWA', image:'https://user-images.githubusercontent.com/85147307/149609610-2029cbad-b38c-4d0e-bebd-77da3e83403d.png', subtitle:"PWA"},
+        { name: 'Art of Recruiter Programming', deploy:"https://watch.screencastify.com/v/YOPYRYz2gPMBQIwlur3i", link: 'https://github.com/azuryte5/art-of-recruiter-programming', image:'https://user-images.githubusercontent.com/85147307/149671175-acf4f25d-5ada-4077-9744-4c518a4fe9fe.png', subtitle:"OOP inquirer roster page generation"},
+        { name: 'Deep Space Manager', deploy:"https://watch.screencastify.com/v/zBSdIeIjVO7j8RvXqgW0", link: 'https://github.com/azuryte5/deep-space-manager', image:'https://user-images.githubusercontent.com/85147307/149609664-94b7ab92-7909-43f3-9f91-da445f24d2fd.png', subtitle:"Back End Sequelize"},
 
 ]    
     return (
@@ -24,7 +24,7 @@ const Project = () => {
             <Card.ImgOverlay> 
             <Card.Title className="small-title">{project.name}</Card.Title>
             <Card.Subtitle>{project.subtitle}</Card.Subtitle>
-            <Button variant="warning">Deployed App</Button>
+            <Button variant="warning" href={project.deploy} target='_blank'>Deployed App</Button>
             <Button variant="primary" href={project.link} target='_blank'>GitHub</Button>
             </Card.ImgOverlay>
         </Card.Body>
