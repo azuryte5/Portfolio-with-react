@@ -154,16 +154,6 @@ header h1:hover::before {
   box-shadow: 10px 5px 20px var(--primary-color);
 }
 
-.big-project2 {
-  flex-grow: 2;
-  width:100%;
-  border: 4px solid var(--secondary-color);
-  /* background-image: url(https://user-images.githubusercontent.com/59127869/144726238-13142112-1a62-4314-a4e4-a48fee64c4d7.png); */
-  background-position:top;
-  background-repeat: no-repeat;
-  background-size: 100%;  
-  box-shadow: 10px 5px 20px var(--primary-color);
-}
 .big-project:hover, .small-project:hover {
   opacity: 80%;
 }
@@ -180,54 +170,13 @@ header h1:hover::before {
 }
 
 .small-project {
-  margin: 10px 0;
+  margin-top: 40%;
+  align-items: flex-end;
   width:46%;
   border: 4px solid var(--secondary-color);
   background-position: center;
   background-size:cover;
   box-shadow: 10px 5px 20px var(--primary-color);
-}
-
-.small-projectPlan {
-  margin: 10px 0;
-  width:46%;
-  border: 4px solid var(--secondary-color);
-  /* background-image:url(../assets/images/screenshot5.png); */
-  background-position: left;
-  background-size:cover;
-  box-shadow: 10px 5px 20px var(--primary-color);
-}
-.small-projectPassword {
-  margin: 10px 0;
-  width:46%;
-  border: 4px solid var(--secondary-color);
-  /* background-image:url(../assets/images/password-challenge.png); */
-  background-position: top;
-  background-size:cover;
-  box-shadow: 10px 5px 20px var(--primary-color);
-}
-.small-projectWeather {
-  margin: 10px 0;
-  width:46%;
-  border: 4px solid var(--secondary-color);
-  /* background-image:url(../assets/images/screenshot-weather.png); */
-  background-position: left;
-  background-size:cover;
-  box-shadow: 10px 5px 20px var(--primary-color);
-}
-
-.small-projectQuiz {
-  margin: 10px 0;
-  width:46%;
-  border: 4px solid var(--secondary-color);
-  /* background-image:url(../assets/images/quiz.jpg); */
-  background-position: center;
-  background-size:cover;
-  box-shadow: 10px 5px 20px var(--primary-color);
-}
-.hitbox {
-  height: 300px;
-  width: 47%;
 }
 
 .small-title {

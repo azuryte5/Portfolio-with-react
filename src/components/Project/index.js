@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Badge } from 'react-bootstrap';
 
 const Project = () => {
     
@@ -18,14 +18,15 @@ const Project = () => {
     {projectList.map(project => {
     return (
     <Col>
-    <Card className="bg-dark text-white fluid small-project" style={{ width: '20rem'}} border="success" key={project.name}>
+    <Card className="bg-dark text-white fluid big-project" style={{ width: '20rem'}} border="success" key={project.name}>
         <Card.Body>
         <Card.Img src={project.image} alt="Card image" height="250rem" />
             <Card.ImgOverlay> 
             <Card.Title className="small-title">{project.name}</Card.Title>
-            <Card.Subtitle>{project.subtitle}</Card.Subtitle>
-            <Button variant="warning" href={project.deploy} target='_blank'>Deployed App</Button>
-            <Button variant="primary" href={project.link} target='_blank'>GitHub</Button>
+            <Badge bg="info">{project.subtitle}</Badge>
+            <Card.Subtitle></Card.Subtitle>
+            <Button variant="warning" href={project.deploy} className="small-project" target='_blank'>Deployed App</Button>
+            <Button variant="primary" href={project.link} className="small-project" target='_blank'>GitHub</Button>
             </Card.ImgOverlay>
         </Card.Body>
     </Card>
