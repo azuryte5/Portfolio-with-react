@@ -13,7 +13,7 @@ const Project = () => {
 
 ]    
     return (
-    <Container className="justify-content-md-center fluid applications" >
+    <Container className="justify-content-md-center fluid applications block" >
         <Row>
     {projectList.map(project => {
     return (

@@ -44,7 +44,7 @@ header nav ul {
   flex-wrap: wrap;
   justify-content:center;
   
-  font-size: 2.55vw; 
+  font-size: 2.0vw; 
 }
 
 /* Added pseudo elements that could stay in place */
@@ -187,7 +187,7 @@ header h1:hover::before {
   }
 /* contact me */
 .contact {
-  width: 66%;
+  width: auto;
   border-left: 5px solid var(--border-color);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
@@ -264,6 +264,10 @@ header h1:hover::before {
   .contact {
       width: 75%;
   }
+
+  figure{
+    width: 100%;
+  }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 892px) {
@@ -303,6 +307,12 @@ header h1:hover::before {
   }
   .contact ul {
       align-content: space-around;
+  }
+  .contact li{
+    font-size: 1.2rem;
+  }
+  figure{
+    width: 100%;
   }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -344,5 +354,8 @@ header h1:hover::before {
   }
   .label {
       margin: 10px;
+  }
+  .contact li{
+    font-size: 0.8rem;
   }
 }
