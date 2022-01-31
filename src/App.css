@@ -249,12 +249,12 @@ header h1:hover::before {
   }
   
   .small-project {
-      max-height: 150px;
+      max-height: 4rem;
   }
 
   .small-title {
-      font-size: 20px;
-      margin-top: 100px;
+      font-size: 1rem;
+
   }
   .contact ul {
       line-height: 2;
@@ -296,15 +296,14 @@ header h1:hover::before {
       flex-flow: column wrap;
       align-items: center;
   }
-  .small-project {
-      width:60%
+ .small-project {
+  font-size: 1rem;
   }
 
-  .small-title {
-      position: absolute;
-      font-size: 12px;
-      
-  }
+ .small-title {
+      font-size: 1rem;
+     
+  }  
   .contact ul {
       align-content: space-around;
   }
@@ -313,6 +312,9 @@ header h1:hover::before {
   }
   figure{
     width: 100%;
+  }
+  .big-project{
+  font-size: smaller;
   }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
