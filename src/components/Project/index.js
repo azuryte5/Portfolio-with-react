@@ -4,7 +4,7 @@ import { Card, Button, Container, Row, Col, Badge } from 'react-bootstrap';
 const Project = () => {
     
     const projectList = [
-        { name: '| Paint | Between the lines', deploy:"https://paint-between-lines.herokuapp.com/", link: 'https://github.com/jhugray/colouring', image:'https://user-images.githubusercontent.com/85147307/152003893-e56946e1-565f-4609-997b-1956f47ba182.png', subtitle:"React Colouring PSA PWA"},
+        { name: '| Paint | Between the lines', deploy:"https://paintbetweenthelines.herokuapp.com/colouring", link: 'https://github.com/jhugray/colouring', image:'https://user-images.githubusercontent.com/85147307/152003893-e56946e1-565f-4609-997b-1956f47ba182.png', subtitle:"React Colouring PSA PWA"},
         { name: 'Sputtle Music App', deploy:"https://music-battle-spotify.herokuapp.com/", link: 'https://github.com/azuryte5/music-battle-spotify', image:'https://user-images.githubusercontent.com/85147307/149671331-4c47a551-9024-4890-9f69-c198e5403845.png', subtitle:"Spotify API Music Battle MVC"},
         { name: 'Nutrivalue', deploy:"https://azuryte5.github.io/Nutrition-Sustenance-Value/", link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value', image:'https://user-images.githubusercontent.com/85147307/149609594-266b3b58-5ad4-443a-a6cb-0da8a3ced07e.png', subtitle:"Front End Recipe and Map API"},
         { name: 'Tech it Ralph', deploy:"https://polar-sierra-45467.herokuapp.com/", link: 'https://github.com/azuryte5/Tech-It-Ralph', image:'https://user-images.githubusercontent.com/85147307/149609655-39cf6c72-7ecc-41f5-aa96-d8e4bec8cb99.png', subtitle:"MVC Tech Blog w auth"},
