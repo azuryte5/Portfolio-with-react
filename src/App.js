@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import Navbar from "./components/Navbar";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -25,6 +25,9 @@ function App() {
   };
   return (
     <div className="App">
+      <Navbar 
+      currentSection={currentSection}
+      handleSectionChange={handleSectionChange}/>
       <Header
         currentSection={currentSection}
         handleSectionChange={handleSectionChange}

@@ -5,9 +5,10 @@
 }
 
 :root {
-  --primary-color: #1fe78d ;
-  --secondary-color:#1725be ;
-  --tertiary-color:#bfdde0 ;
+  --primary-color: #034F4F ;
+  --secondary-color:#413C58 ;
+  --tertiary-color:#CDEDF6 ;
+  --forth-color:#F8CAB4;
   --border-color:black;
 }
 
@@ -73,9 +74,10 @@ header h1:hover::before {
 /* Header end */
 
 .jumbotron {
-  background-image: url(../src/assets/images/hero-banner.jpg);
-  background-attachment: fixed;
+  background-image: url(../src/assets/images/hero-banner-v2.jpg);
+  /* background-attachment: fixed; */
   display: flex;
+  bottom: 0;
   margin: 0;
   box-shadow: 4px 5px 40px var(--primary-color);
 }
