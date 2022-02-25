@@ -31,60 +31,60 @@ function Nav(props) {
   React.useEffect(() => {
     return scrollY.onChange(() => setY(scrollY.get()));
   }, [scrollY]);
-  const cl = useColorModeValue("gray.800", "white");
+  const cl = useColorModeValue("gray.800", "#F8CAB4");
   const mobileNav = useDisclosure();
   const colourModeVal = useColorModeValue("gray.200", "gray.900");
   const colourModeVal2 = useColorModeValue("gray.800", "inherit")
 
-  const MobileNavContent = (
-    <VStack
-      pos="absolute"
-      w="full"
-      top={0}
-      left={0}
-      right={0}
-      display={mobileNav.isOpen ? "flex" : "none"}
-      flexDirection="column"
-      p={2}
-      pb={4}
-      m={2}
-      bg={bg}
-      spacing={3}
-      rounded="sm"
-      shadow="sm"
-      zIndex={200}
-    >
-      <CloseButton
-        aria-label="Close menu"
-        justifySelf="self-start"
-        onClick={mobileNav.onClose}
-      />
-      <Container w="full">
-          <Link variant="ghost" w="full" type="submit" href={'/colouring'}>
-            Andrew Lefebvre
-          </Link>
-      </Container>
+  // const MobileNavContent = (
+  //   <VStack
+  //     pos="absolute"
+  //     w="full"
+  //     top={0}
+  //     left={0}
+  //     right={0}
+  //     display={mobileNav.isOpen ? "flex" : "none"}
+  //     flexDirection="column"
+  //     p={2}
+  //     pb={4}
+  //     m={2}
+  //     bg={bg}
+  //     spacing={3}
+  //     rounded="sm"
+  //     shadow="sm"
+  //     zIndex={200}
+  //   >
+  //     <CloseButton
+  //       aria-label="Close menu"
+  //       justifySelf="self-start"
+  //       onClick={mobileNav.onClose}
+  //     />
+  //     <Container w="full">
+  //         <Link variant="ghost" w="full" type="submit" href={'/colouring'}>
+  //           Andrew Lefebvre
+  //         </Link>
+  //     </Container>
   
-        <>
-        <Container w="full">
-          <form method="get" action="/login">
-            <Button variant="ghost" w="full" type="submit">
-              Login
-            </Button>
-          </form>
-        </Container>
+  //       <>
+  //       <Container w="full">
+  //         <form method="get" action="/login">
+  //           <Button variant="ghost" w="full" type="submit">
+  //             Login
+  //           </Button>
+  //         </form>
+  //       </Container>
          
-        <Container w="full">
-          <form method="get" action="/signup">
-            <Button variant="ghost" w="full" type="submit">
-              Sign up
-            </Button>
-          </form>
-        </Container>
-        </>
+  //       <Container w="full">
+  //         <form method="get" action="/signup">
+  //           <Button variant="ghost" w="full" type="submit">
+  //             Sign up
+  //           </Button>
+  //         </form>
+  //       </Container>
+  //       </>
   
-    </VStack>
-  );
+  //   </VStack>
+  // );
   return (
     <chakra.header
       ref={ref}
@@ -97,16 +97,18 @@ function Nav(props) {
       overflowY="hidden"
       borderBottomWidth={2}
       borderBottomColor={colourModeVal}
+      position="fixed"
+      zIndex={400}
+      justifyContent="space-between"
     >
-      <chakra.div h="4.5rem" mx="auto" maxW="1200px">
+      <chakra.div h="auto" mx="auto">
         <Flex
           w="full"
           h="full"
           px="100"
-          alignItems="center"
           justifyContent="space-between"
         >
-          <Flex justify="flex-end" align="center" color="gray.400" zIndex={200}>
+          <Flex  align="center" color="#CDEDF6" zIndex={200} justifyContent="space-between">
             <HStack spacing="5" display={{ base: "none", md: "flex" }}>
                 <Link
                   bg={"#034F4F"} 
@@ -118,6 +120,8 @@ function Nav(props) {
                   fontWeight={1000}
                   _hover={{ color: cl }}
                   _focus={{ boxShadow: "none" }}
+                  borderRadius="10px"
+                  zIndex={400}
                 >
                   Andrew Lefebvre
                 </Link>
@@ -156,7 +160,7 @@ function Nav(props) {
             />
           </Flex>
         </Flex>
-        {MobileNavContent}
+        {/* {MobileNavContent} */}
       </chakra.div>
     </chakra.header>
   );

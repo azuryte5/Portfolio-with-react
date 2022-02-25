@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 
 function App() {
   const [currentSection, handleSectionChange] = useState();
@@ -15,8 +15,8 @@ function App() {
     switch (currentSection) {
       case "Portfolio":
         return <Portfolio />;
-      case "Contact":
-        return <Contact />;
+      // case "Contact":
+      //   return <Contact />;
       case "Resume":
         return <Resume />;
       default:
@@ -28,10 +28,10 @@ function App() {
       <Navbar 
       currentSection={currentSection}
       handleSectionChange={handleSectionChange}/>
-      <Header
+      {/* <Header
         currentSection={currentSection}
         handleSectionChange={handleSectionChange}
-      />
+      /> */}
       <div>{renderPage(currentSection)}</div>
       <Footer />
     </div>
