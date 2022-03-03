@@ -1,5 +1,5 @@
 # Portfolio-with-react
-20. React Challenge: React Portfolio
+20. React Challenge: React Portfolio - Now outdated, please see new portfolio
 
 # Table of Contents
 1. [Links](#links)
