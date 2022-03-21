@@ -14,7 +14,7 @@ The URL of the GitHub repository: https://github.com/azuryte5/Portfolio-with-rea
 
 The link to the deployed Resume: https://azuryte5.github.io/portfolio-andrew-l/
 
-Old Portfolio link: ~~https://azuryte5.github.io/Portfolio-with-react/
+Old Portfolio link: ~~https://azuryte5.github.io/Portfolio-with-react/~~
 
 -----
 ## Usage
