@@ -1,6 +1,5 @@
 # Portfolio-with-react
-20. React Challenge: React Portfolio - Now outdated, please see new portfolio
-
+*** This Portfolio is outdated. Please see https://azuryte5.github.io/portfolio-andrew-l/ for current portfolio
 # Table of Contents
 1. [Links](#links)
 1. [Usage](#usage)
